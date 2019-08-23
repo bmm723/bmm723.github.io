@@ -5,6 +5,7 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		var bodyheight = $(this).height();
 		$(".header").height(bodyheight);
+		$("#about").height(bodyheight);
 	}).resize();
 });
 $(document).ready(function() {

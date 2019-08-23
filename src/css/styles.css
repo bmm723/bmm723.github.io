@@ -160,11 +160,30 @@ li a:hover {
 	position: relative;
 	overflow: hidden;
 	height: 100%;
-	width: 40%;
+	width: 50%;
+}
+#about-panel {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top:0;
+	right: 0;
+	z-index: 1;
+	background-color: #f0c95d;
+}
+#about h1 {
+	padding-top: 0.25em;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
 }
 #tree img{
+	margin:auto;
 	position: absolute;
-	width: 600px;
+	height: 70%;
+	bottom:0;
+	top:0;
+	left: 0; 
+	right: 0; 
 }
 .triangle1 {
 	position: absolute;
