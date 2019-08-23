@@ -6,6 +6,7 @@ $(document).ready(function() {
 		var bodyheight = $(this).height();
 		$(".header").height(bodyheight);
 		$("#about").height(bodyheight);
+		$("#work").height(bodyheight);
 	}).resize();
 });
 $(document).ready(function() {
