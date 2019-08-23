@@ -1,0 +1,250 @@
+html, body {
+	margin: 0;
+}
+#navigation {
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 3em;
+	background-color: #f7f7f7;
+	box-shadow: 0 1px 9px #d4d4d4;
+	z-index: 100;
+}
+#nav-img {
+	padding-left: 1em;
+	height: 100%;
+	width: 50px;
+	float: left;
+	display: block;
+}
+#nav-img img{
+	padding-top: 5px;
+	height: 80%;
+}
+#nav-items {
+	float: right;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #33312a;
+  text-align: center;
+  padding: 13px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #f0c13a;
+}
+.header {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+#video {
+	position: absolute;
+	left:-100px;
+	top:0;
+	z-index: -3;
+}
+#overlay {
+	width: 100%;
+	height: 100%;
+	background-color: #694d00;
+	opacity: 0.5;
+	z-index: -1;
+}
+.header img{
+	width: 100px;
+	padding: 2em;
+	display: block;
+}
+#navigation h1{
+	float: left;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 100;
+	font-size: 25px;
+	margin: 0;
+	margin-top: 5px;
+	letter-spacing: 3px;
+	color: #6e4a14;
+}
+.four-panels {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	height: 600px;
+	display: inline-block;
+}
+#americorps-panel {
+	background-color: #e6e6e6;
+}
+#rit-panel {
+	background-color: #ffa869;
+}
+#nasa-panel {
+	background-color: #b5c8e8;
+}
+.work-panels {
+	width: 20%;
+	height: 100%;
+	margin: 0 1em 0 1em;
+	display: inline-block;
+}
+.four-panels img {
+	width: 170px;
+	padding: 200px 0;
+	display: block;
+	margin: 0 auto;
+}
+#experiences {
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	padding-top: 2em;
+	background-color: #fcfcfc;
+}
+#abilities {
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	padding-top: 2em;
+	background-color: #f5efe4;
+}
+#abilities h1, #experiences h1 {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 54px;
+	font-weight: 100;
+	color: #22A39F;
+}
+#abilities h2 {
+	font-size: 26px;
+	font-weight: 300;
+	color:#22A39F;
+}
+#abilities p {
+	font-size: 15px;
+	font-weight: 100;
+}
+#abilities hr {
+	width: 50%;
+	border: 1px solid #dbdbdb;
+}
+#languages-list {
+	margin: 0 auto;
+}
+#languages-list img, #software-os-list img {
+	width: 15px;
+	padding-right: 4px;
+	float: right;
+}
+#about {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color: #f7f7f7;
+	z-index: -10;
+}
+#tree {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	width: 40%;
+}
+#tree img{
+	position: absolute;
+	width: 600px;
+}
+.triangle1 {
+	position: absolute;
+	top: -100px;
+	right: 90px;
+	width: 0; 
+	height: 0; 
+	z-index: -5;
+	border-left: 90px solid transparent;
+	border-right: 90px solid transparent;
+	border-bottom: 130px solid #ffc336;
+}
+.triangle2 {
+	position: absolute;
+	top: -50px;
+	right: 200px;
+	width: 0; 
+	height: 0; 
+	z-index: -5;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 40px solid #fff6c7;
+}
+.triangle3 {
+	position: absolute;
+	top: 200px;
+	right: 150px;
+	width: 0; 
+	height: 0; 
+	z-index: -5;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	border-bottom: 120px solid #707070;
+}
+.triangle4 {
+	position: absolute;
+	bottom: 150px;
+	right: 150px;
+	width: 0; 
+	height: 0; 
+	z-index: -5;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 200px solid #ffe8ad;
+}
+.triangle5 {
+	background-image: url('../img/triangle.png');
+	background-repeat: no-repeat;
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: 0;
+	opacity: 0;
+	right: 80px;
+	z-index: -5;
+	width: 200px;
+	height: 200px;
+}
+
+#footer{
+	width: 100%;
+	height: 200px;
+	background-color: #363025;
+	color: white;
+	text-align: center;
+}
+#left-footer-box{
+	margin: 0 auto;
+	width: 50%;
+	height: 85%;
+	margin-top: 1em;
+}
+.footer-icon {
+	width: 40px;
+}
+
+
+@media only screen and (max-width: 900px) {
+	#languages-list, #software-os-list {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+

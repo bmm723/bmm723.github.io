@@ -4,16 +4,16 @@
 	<head>
 		<meta char="utf-8">
 		<title>Brie McIntosh</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-		<link rel="icon" href="logo2.png">
+		<link rel="icon" href="src/img/logo2.png">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Work+Sans:100&display=swap" rel="stylesheet">
 	</head>
 	
 	<body>
 		<div id="navigation">
 			<div id="nav-img">
-				<img src="logo2.png" alt="icon">
+				<img src="src/img/logo2.png" alt="icon">
 			</div>
 			<h1>Brie McIntosh</h1>
 			<div id="nav-items">
@@ -26,40 +26,37 @@
 			</div>
 		</div>
 		<div class="header">
-				<div id="wrap">
-				  <div class="steam" id="steam-one"></div>
-				  <div class="steam" id="steam-two"></div>
-				  <div class="steam" id="steam-three"></div>
-				  <div class="steam" id="steam-four"></div>
-				  
-				  <div id="cup">
-					<div id="cup-body">
-					<div id="cup-shade"></div>
-					</div>
-					<div id="cup-handle"></div>
-				  </div>
-				  
-				  <div id="saucer"></div>
-				  
-				  <div id="shadow"></div>
-				</div>
+		<div id="overlay"></div>
+			<video autoplay muted loop id="video">
+				<source src="src/img/sunflower.mp4" type="video/mp4">
+			</video>	
 		</div>
-		<div id="experiences">
+		<!--<div id="experiences">
 			<h1>Experiences</h1>
 			<div class="four-panels">
 				<div id="rit-panel" class="work-panels">
-					<img src="rit.png" href="americorps logo">
+					<img src="src/img/rit.png" href="americorps logo">
 				
 				</div>
 				<div id="americorps-panel" class="work-panels">
-					<img src="americorps.png" href="americorps logo">
+					<img src="src/img/americorps.png" href="americorps logo">
 				</div>
 				<div id="nasa-panel" class="work-panels">
-					<img src="nasa.png" href="americorps logo">
+					<img src="src/img/nasa.png" href="americorps logo">
 				</div>
 			</div>
+		</div>-->
+		<div id="about">
+			<div id="tree">
+				<img src="src/img/tree.png">
+				<div class="triangle1"></div>
+				<div class="triangle2"></div>
+				<div class="triangle3"></div>
+				<div class="triangle4"></div>
+				<div class="triangle5"></div>
+			</div>
 		</div>
-		<div id="abilities">
+		<!--<div id="abilities">
 			<h1>Abilities and Skills</h1>
 			<hr>
 			<div id="languages-list">
@@ -70,18 +67,18 @@
 			<div id="software-os-list">
 				<h2>Software Tools</h2>
 			</div>
-		</div>
+		</div>-->
 
 		<div id="footer">
 			<div id="left-footer-box">				
 				<p>Let's get in touch!</p>
-				<img class="footer-icon" src="github.png" alt="GitHub">
-				<img class="footer-icon" src="linkedin.png" alt="Linkedin">
-				<img class="footer-icon" src="gmail.png" alt="Gmail">
+				<img class="footer-icon" src="src/img/github.png" alt="GitHub">
+				<img class="footer-icon" src="src/img/linkedin.png" alt="Linkedin">
+				<img class="footer-icon" src="src/img/gmail.png" alt="Gmail">
 				<p>&copy; Brie McIntosh | 2019</p>
 			</div>
 		</div>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="script.js"></script>
+	<script src="src/script/script.js"></script>
 </html>
