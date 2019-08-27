@@ -7,6 +7,7 @@ $(document).ready(function() {
 		$(".header").height(bodyheight);
 		$("#about").height(bodyheight);
 		$("#work").height(bodyheight);
+		$("#projects").height(bodyheight);
 	}).resize();
 });
 $(document).ready(function() {
@@ -99,15 +100,20 @@ $(document).ready(function() {
 $("#nav-home").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $(".header").offset().top
-    }, 600);
+    }, 500);
 });
 $("#nav-about").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#about").offset().top
-    }, 600);
+    }, 500);
 });
 $("#nav-work").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#work").offset().top
-    }, 600);
+    }, 500);
+});
+$("#nav-projects").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#projects").offset().top
+    }, 500);
 });
