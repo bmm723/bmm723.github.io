@@ -43,7 +43,7 @@ $(document).ready(function() {
 			"left": "-200px",
 			"top": "150px",
 			"opacity": 0}, {
-				duration: 22000,
+				duration: 18000,
 				complete: oneslideout
 			});
 	}
@@ -51,12 +51,12 @@ $(document).ready(function() {
 	function fivefadeout() {
 		$(".triangle5").stop(true,true).delay(8000).animate({
 			"opacity":1}, {
-				duration:11000, 
+				duration:9000, 
 				complete:fivefadein
 			});
 	}
 	function fivefadein() {
-		$(".triangle5").stop(true,true).delay(1000).animate({
+		$(".triangle5").animate({
 			"opacity":0}, {
 				duration:11000,
 				complete: fivefadeout
@@ -90,10 +90,24 @@ $(document).ready(function() {
 			complete: threefadeout
 		});
 	}
-
-	
 	oneslideout();
 	twoslideout();
 	fivefadeout();
 	threefadeout();
+});
+
+$("#nav-home").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(".header").offset().top
+    }, 600);
+});
+$("#nav-about").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#about").offset().top
+    }, 600);
+});
+$("#nav-work").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#work").offset().top
+    }, 600);
 });

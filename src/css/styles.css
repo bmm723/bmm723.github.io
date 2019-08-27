@@ -25,18 +25,18 @@ html, body {
 #nav-items {
 	float: right;
 }
-ul {
+#navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+#navigation li {
   float: left;
 }
 
-li a {
+#navigation li a {
   display: block;
   color: #33312a;
   text-align: center;
@@ -44,7 +44,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+#navigation li a:hover {
   color: #998E12;
 }
 .header {
@@ -67,12 +67,12 @@ li a:hover {
 }
 #header-bottom p {
 	text-align: center;
-    padding-top: 4em;
+    padding-top: 3em;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.3em;
     font-weight: 500;
     color: #fafafa;
-    font-size: 11px;
+    font-size: 13px;
     text-transform: uppercase;
 }
 #navigation h1{
@@ -140,18 +140,38 @@ li a:hover {
 }
 #about-panel {
 	position: absolute;
+	font-family: 'Open Sans', sans-serif;
 	width: 50%;
 	height: 100%;
+	color: white;
+	text-align: center;
 	top:0;
 	right: 0;
 	z-index: 1;
 	background-color: #CCC256;
 }
+#about-text {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 8em;
+}
 #about h1 {
+	font-family: 'Work Sans', sans-serif;
 	padding-top: 0.25em;
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
+	font-style: normal;
+	font-size: 40px;
 	text-align: center;
+}
+#about p {
+	font-family: 'Work Sans', sans-serif;
+	padding-top: 4em;
+	font-weight: 100;
+}
+#about hr {
+	width: 50%;
+	border-color: white;
+	border-top: 1px;
 }
 #tree img{
 	margin:auto;
@@ -226,12 +246,32 @@ li a:hover {
 	z-index: -10;
 }
 #work img {
-	height: 150px;
+	width: 130px;
 	top: 7em;
 	left: 50%;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 4em;
 }
 #jobs {
 	padding-top: 8em;
+	font-family: 'Work Sans', sans-serif;
+}
+.job .text {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+}
+.job h1 {
+	top: 0;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0;
+}
+.job h2, .job h3 {
+	font-size: 15px;
+	font-weight: 100;
+	margin: 0;
 }
 .job {
 	width: 80%;
