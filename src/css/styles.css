@@ -45,30 +45,29 @@ li a {
 }
 
 li a:hover {
-  color: #f0c13a;
+  color: #998E12;
 }
 .header {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
 	background-color: #ffdd85;
+	text-align: center;
 }
-.header img{
-	margin: 0 auto;
-	height: 70%;
+.header img {
+	height: 75%;
 	padding-top: 4em;
-	display: block;
 }
 #header-bottom {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 8em;
+	height: 7em;
 	background-color: #56B3CC;
 }
 #header-bottom p {
 	text-align: center;
-    padding-top: 4.5em;
+    padding-top: 4em;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.3em;
     font-weight: 500;
@@ -85,34 +84,6 @@ li a:hover {
 	margin-top: 5px;
 	letter-spacing: 3px;
 	color: #6e4a14;
-}
-.four-panels {
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	height: 600px;
-	display: inline-block;
-}
-#americorps-panel {
-	background-color: #e6e6e6;
-}
-#rit-panel {
-	background-color: #ffa869;
-}
-#nasa-panel {
-	background-color: #b5c8e8;
-}
-.work-panels {
-	width: 20%;
-	height: 100%;
-	margin: 0 1em 0 1em;
-	display: inline-block;
-}
-.four-panels img {
-	width: 170px;
-	padding: 200px 0;
-	display: block;
-	margin: 0 auto;
 }
 #experiences {
 	margin: 0 auto;
@@ -255,15 +226,22 @@ li a:hover {
 	z-index: -10;
 }
 #work img {
-	position: absolute;
-	height: 200px;
+	height: 150px;
 	top: 7em;
+	left: 50%;
+}
+#jobs {
+	padding-top: 8em;
+}
+.job {
+	width: 80%;
+	float: right;
 }
 #header-work {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 8em;
+	height: 7em;
 	background-color: #56B3CC;
 }
 #header-work h1 {
