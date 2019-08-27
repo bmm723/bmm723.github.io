@@ -318,5 +318,42 @@ html, body {
 		width: 50%;
 		margin: 0 auto;
 	}
+	#work {
+		overflow: hidden;
+		z-index: 5;
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	#jobs {
+		position: absolute;
+		top:0;
+		right:-17px;
+		left:0;
+		bottom:0;
+		z-index: -10;
+		overflow-y:scroll;
+	}
+	#jobs .job img {
+		display: none;
+	}
+	.job {
+		width: 90%;
+		margin: 0 auto;		
+	}
+}
+@media only screen and (max-width: 600px) {
+	#nav-items {
+		display: none;
+	}
+	#about #tree {
+		display: none;
+	}
+	#about #about-panel {
+		width: 100%;
+	}
+	#about-text {
+		padding-top: 1em;
+	}
 }
 
