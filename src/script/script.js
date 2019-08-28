@@ -1,6 +1,10 @@
-var languages = [["Java",5],["HTML/CSS",5],["Javascript", 5],["SQL",5],["MongoDB",5],["PHP",4],["JQuery",4],["Bootstrap",4],["Python",3],["React.js",3],["Swift",3],["Kotlin",3],["C#",3],["Neo4j",3],["Powershell",2]];
-var software = [["Windows",5],["Mac",5],["Linux",3],["Adobe Creative Suite",5],["Microsoft Office Suite",5],["Visual Studio",4],["XCode",3],["Android Studio",3],["ArcMap", 3],["GitHub",5]];
+var nasa = ["Powershell","mongodb","html","css","javascript","python","microsoft access"];
+var cad = ["Jira","Confluence","mattermost","wordpress","photoshop","html","css","javascript","java"]
+var rit=["Java","HTML","CSS","JavaScript","jQuery","SQL","MongoDB","Neo4j","C#","Python","Swift","Kotlin","Angular.JS","React.JS"];
 
+/*
+	Resize main topic boxes to screen height
+*/
 $(document).ready(function() {
 	$(window).resize(function() {
 		var bodyheight = $(this).height();
@@ -9,35 +13,34 @@ $(document).ready(function() {
 		$("#work").height(bodyheight);
 		$("#projects").height(bodyheight);
 	}).resize();
-});
-$(document).ready(function() {
-	for(var i = 0; i < languages.length; i++) {
-		var node = document.createElement("P");
-		var txt = document.createTextNode(languages[i][0]);
+	/*
+		Add work and education arrays to page
+	*/
+	for(var i = 0; i < nasa.length; i++) {
+		var node = document.createElement("span");
+		var txt = document.createTextNode(nasa[i]);
 		node.appendChild(txt);
+		node.className="skill";
 
-		for(var j = 0; j < languages[i][1]; j++) {
-			var img = document.createElement("IMG");
-			img.src = "src/img/star.png";
-			node.appendChild(img);
-		}
-		document.getElementById("languages-list").appendChild(node);
+		document.getElementById("nasa").appendChild(node);
 	}
-	
-		for(var i = 0; i < software.length; i++) {
-		var node = document.createElement("P");
-		var txt = document.createTextNode(languages[i][0]);
+	for(var i = 0; i < nasa.length; i++) {
+		var node = document.createElement("span");
+		var txt = document.createTextNode(cad[i]);
 		node.appendChild(txt);
+		node.className="skill";
 
-		for(var j = 0; j < languages[i][1]; j++) {
-			var img = document.createElement("IMG");
-			img.src = "src/img/star.png";
-			node.appendChild(img);
-		}
-		document.getElementById("software-os-list").appendChild(node);
+		document.getElementById("cad").appendChild(node);
 	}
-});
-$(document).ready(function() {
+	for(var i = 0; i < rit.length; i++) {
+		var node = document.createElement("span");
+		var txt = document.createTextNode(rit[i]);
+		node.appendChild(txt);
+		node.className="skill";
+
+		document.getElementById("rit").appendChild(node);
+	}
+
 	function oneslideout() {
 		$(".triangle1").css({"left":"200px", "top":"-180px", "opacity":1});
 		$(".triangle1").animate({
@@ -48,7 +51,6 @@ $(document).ready(function() {
 				complete: oneslideout
 			});
 	}
-
 	function fivefadeout() {
 		$(".triangle5").stop(true,true).delay(8000).animate({
 			"opacity":1}, {
@@ -117,3 +119,7 @@ $("#nav-projects").click(function() {
         scrollTop: $("#projects").offset().top
     }, 500);
 });
+
+function menu(x) {
+	x.classList.toggle("change");
+}

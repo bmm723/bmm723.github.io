@@ -10,6 +10,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -27,9 +28,13 @@
 					<li><a href="#">Resume</a></li>
 				<ul>
 			</div>
+			<div id="container" onclick="menu(this)">
+				<div id="bar1"></div>
+				<div id="bar2"></div>
+				<div id="bar3"></div>
+			</div>
 		</div>
 		<div class="header">
-			<img src="src/img/me.png">
 			<div id="header-bottom">
 				<p>Hello! I'm a front end developer and designer.</p>
 			</div>
@@ -47,7 +52,7 @@
 				<div id="about-text">
 					<h1>I'm Brie.</h1>
 					<hr>
-					<p>Two things I always have on me are my sunglasses and a cup of iced coffee. I'm currently looking for full-time employment as a front end sofware engineer, preferably along the United States West Coast or in Europe. In my freetime I enjoy:</p>
+					<p>I'm currently looking for full-time employment as a front end sofware engineer, preferably along the United States West Coast or in Europe. In my freetime I enjoy:</p>
 					<p>Painting, playing with my dog, swimming, kayaking, mini golf, playing video games</p>
 				</div>
 			</div>
@@ -57,43 +62,71 @@
 				<h1>Work Experiences</h1>
 			</div>
 			<div id="jobs">
-			<div class="job">
-				<img src="src/img/rit.png" href="RIT logo">
-				<div class="text">
-					<h1>Rochester Institute of Technology College of Art and Design</h1>
-					<h2>IT Technician</h2>
-					<h3>August 2016 - May 2019</h3>
-					<ul>
-						<li>Troubleshot malfunctioning lab hardware and software, determining what route to take for repair. </li>
-						<li>Responded to tickets from faculty, staff, and students within 8 business hours.</li>
-						<li>Tracked ticket progression and shared knowledge through Jira, Confluence, and Mattermost.</li>
-						<li>Managed and trained new student employees on company policies and workplace norms.</li>
-					</ul>
+				<h4>Education</h4>
+				<div class="job">
+					<img src="src/img/rit_insignia.png" href="RIT logo">
+					<div class="text">
+						<h1>Rochester Institute of Technology</h1>
+						<h2>B.S. in Web & Mobile Computing | 3.2</h2>
+						<h3>May 2019</h3>
+						<ul>
+							<li>Software Design Principles and Patterns</li>
+							<li>Database Application Development</li>
+							<li>Mobile Application Development I&II</li>
+							<li>Client and Server Programming</li>
+							<li>Contemporary Databases</li>
+							<li>Web & Mobile I&II</li>
+							<li>Intro to Geographic Information Systems</li>
+						</ul>
+						<div id="rit" class="skills-list"></div>
+					</div>
 				</div>
-			</div>
-			<div class="job">
-				<img src="src/img/nasa.png" href="NASA logo">
-				<div class="text">
-					<h1>NASA John Glenn Research Center</h1>
-					<h2>Civil Servant</h2>
-					<h3>May 2017 - August 2018</h3>
-					<ul>
-						<li>Migrated multiple, interconnected Microsoft Access databases to Oracle and used PowerShell to automate daily reports, decreasing overhead by 90%.</li>
-						<li>Developed a centralized Mongo database for researchers to store and generate reports from.</li>
-						<li>Wrote a security plan detailing how security controls were satisfied in a web application. </li>
-						<li>Solicited requirements to create a design document for future developers to create a single page web application for a researcher on Center.</li>
-					</ul>
+				<h4>Work Experiences</h4>
+				<div class="job">
+					<img src="src/img/rit_insignia.png" href="RIT logo">
+					<div class="text">
+						<h1>Rochester Institute of Technology College of Art and Design</h1>
+						<h2>IT Technician</h2>
+						<h3>August 2016 - May 2019</h3>
+						<ul>
+							<li>Troubleshot malfunctioning lab hardware and software, determining what route to take for repair. </li>
+							<li>Responded to tickets from faculty, staff, and students within 8 business hours.</li>
+							<li>Tracked ticket progression and shared knowledge through Jira, Confluence, and Mattermost.</li>
+							<li>Managed and trained new student employees on company policies and workplace norms.</li>
+						</ul>
+						<div id="cad" class="skills-list"></div>
+					</div>
 				</div>
-			</div>
-			<div class="job">
-				<img src="src/img/americorps.png" href="Americorps logo">
-				<div class="text">
-					<h1>Oswego AmeriCorps</h1>
-					<h2>AmeriCorps Member</h2>
-					<h3>May 2015 - August 2015 | May 2016 - August 2016</h3>
-					<p></p>
+				<div class="job">
+					<img src="src/img/nasa_meatball.png" href="NASA logo">
+					<div class="text">
+						<h1>NASA John Glenn Research Center</h1>
+						<h2>Civil Servant</h2>
+						<h3>May 2017 - August 2018</h3>
+						<ul>
+							<li>Migrated multiple, interconnected Microsoft Access databases to Oracle and used PowerShell to automate daily reports, decreasing overhead by 90%.</li>
+							<li>Developed a centralized Mongo database for researchers to store and generate reports from.</li>
+							<li>Wrote a security plan detailing how security controls were satisfied in a web application. </li>
+							<li>Solicited requirements to create a design document for future developers to create a single page web application for a researcher on Center.</li>
+						</ul>
+						<div id="nasa" class="skills-list"></div>
+					</div>
 				</div>
-			</div>
+				<h4>Volunteer Experience</h4>
+				<div class="job">
+					<img src="src/img/americorps.png" href="Americorps logo">
+					<div class="text">
+						<h1>Oswego AmeriCorps</h1>
+						<h2>AmeriCorps Member</h2>
+						<h3>May 2015 - August 2015 | May 2016 - August 2016</h3>
+						<ul>
+							<li>Educated community youth about fitness and nutrition through public programs in community parks.</li>
+							<li>Planned community events like movies in the park, mural painting, arts and crafts, and small sports games for children.</li>
+							<li>Wrote press releases to inform the community about events occuring in public parks</li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="projects">
@@ -101,26 +134,17 @@
 				<h1>Projects</h1>
 			</div>
 		</div>
-		<!--<div id="abilities">
-			<h1>Abilities and Skills</h1>
-			<hr>
-			<div id="languages-list">
-			<h2>Skills</h2>
-				
-			</div>
-			<hr>
-			<div id="software-os-list">
-				<h2>Software Tools</h2>
-			</div>
-		</div>-->
-
 		<div id="footer">
-			<div id="left-footer-box">				
-				<p>Let's get in touch!</p>
-				<img class="footer-icon" src="src/img/github.png" alt="GitHub">
-				<img class="footer-icon" src="src/img/linkedin.png" alt="Linkedin">
-				<img class="footer-icon" src="src/img/gmail.png" alt="Gmail">
-				<p>&copy; Brie McIntosh | 2019</p>
+			<div id="footer-box">
+				<p id="copyright">&copy; Brie McIntosh | 2019</p>
+
+				<p id="contact">
+					<ul>
+						<li><a href="mailto:bmm7238@gmail.com">Email</a></li>
+						<li><a href="https://linkedin.com/in/bmm7238/">LinkedIn</a></li>
+						<li><a href="https://github.com/bmm723">GitHub</a></li>
+					</ul>
+				</p>
 			</div>
 		</div>
 	</body>
