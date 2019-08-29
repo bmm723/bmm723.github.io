@@ -219,7 +219,7 @@ html, body {
 	z-index: 5;
 	overflow: hidden;
 }
-#work img {
+#work img, .project-image {
 	width: 130px;
 	top: 7em;
 	left: 50%;
@@ -230,11 +230,14 @@ html, body {
     -webkit-filter: grayscale(100%);
 	-webkit-transition: all 0.1s ease;
 }
-#work img:hover {
+#work img:hover, .project-image:hover {
 	filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
-#jobs {
+.project-image img{
+	width: 100%;
+}
+#jobs, .projects {
 	padding-top: 8em;
 	font-family: 'Work Sans', sans-serif;
 	position: absolute;
@@ -257,23 +260,23 @@ html, body {
     text-transform: uppercase;
 	border-bottom: 1px solid #CEC8C8;
 }
-.job {
+.job, .project {
 	padding-top: 3em;
 	width: 60%;
 	margin: 0 auto;
 }
-.job .text {
+.job .text, .project-text {
 	display: inline-block;
 	vertical-align: top;
 	width: 70%;
 }
-#jobs .job h1 {
+#jobs .job h1, .project-text h1 {
 	top: 0;
 	font-size: 20px;
 	font-weight: 500;
 	margin: 0;
 }
-.job h2, .job h3 {
+.job h2, .job h3, .project-text h2 {
 	font-size: 15px;
 	font-weight: 100;
 	margin: 0;
@@ -357,6 +360,7 @@ html, body {
 }
 
 
+
 @media only screen and (max-width: 900px) {
 	.header {
 		background-image: url("../img/me-small.png");
@@ -396,26 +400,11 @@ html, body {
 	}
 	#container {
 		float: right;
-		padding-top: 0.2em;
-		padding-right: 1em;
+		padding-right: 0.5em;
+		font-size: 2em;
+		color: #ccc;
 	}
-	#bar1, #bar2, #bar3 {
-		width: 30px;
-		height: 4px;
-		background-color: #807969;
-		margin: 6px 0;
-		transition: 0.4s;
-	}
-	.change #bar1 {
-		-webkit-transform: rotate(-45deg) translate(-6px, 9px);
-		transform: rotate(-45deg) translate(-6px, 9px);
-	}
-	.change #bar2 {opacity: 0;}
 
-	.change #bar3 {
-		-webkit-transform: rotate(45deg) translate(-6px, -8px);
-		transform: rotate(45deg) translate(-6px, -8px);
-	}
 }
 @media only screen and (max-width: 600px) {
 	#nav-items {

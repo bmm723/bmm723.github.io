@@ -1,7 +1,8 @@
 var nasa = ["Powershell","mongodb","html","css","javascript","python","microsoft access"];
 var cad = ["Jira","Confluence","mattermost","wordpress","photoshop","html","css","javascript","java"]
 var rit=["Java","HTML","CSS","JavaScript","jQuery","SQL","MongoDB","Neo4j","C#","Python","Swift","Kotlin","Angular.JS","React.JS"];
-
+var workflow=["C#","SQL","ASP.NET","jQuery","Chart.js","Semantic-UI","formBuilder", "UI Design","Wireframes","API Design","User Roles","Front end","back end"];
+var asmara=["MongoDB","Python Flask","Plotly","Security plan","Accessibility","Database Design","Database development","UI Design","Customer interaction"];
 /*
 	Resize main topic boxes to screen height
 */
@@ -40,7 +41,23 @@ $(document).ready(function() {
 
 		document.getElementById("rit").appendChild(node);
 	}
+	for(var i = 0; i < asmara.length; i++) {
+		var node = document.createElement("span");
+		var txt = document.createTextNode(asmara[i]);
+		node.appendChild(txt);
+		node.className="skill";
 
+		document.getElementById("asmara").appendChild(node);
+	}
+	for(var i = 0; i < workflow.length; i++) {
+		var node = document.createElement("span");
+		var txt = document.createTextNode(workflow[i]);
+		node.appendChild(txt);
+		node.className="skill";
+
+		document.getElementById("workflow").appendChild(node);
+	}
+	
 	function oneslideout() {
 		$(".triangle1").css({"left":"200px", "top":"-180px", "opacity":1});
 		$(".triangle1").animate({
@@ -119,7 +136,3 @@ $("#nav-projects").click(function() {
         scrollTop: $("#projects").offset().top
     }, 500);
 });
-
-function menu(x) {
-	x.classList.toggle("change");
-}
