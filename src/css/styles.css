@@ -1,65 +1,6 @@
 html, body {
 	margin: 0;
 }
-#bar1, #bar2, #bar3 {
-	/*display: none;*/
-}
-#navigation {
-	font-family: 'Montserrat', sans-serif;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 3em;
-	background-color: #f7f7f7;
-	box-shadow: 0 1px 9px #d4d4d4;
-	z-index: 100;
-}
-#navigation h1{
-	float: left;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 100;
-	font-size: 25px;
-	margin: 0;
-	margin-top: 5px;
-	letter-spacing: 3px;
-	color: #807969;
-}
-#nav-img {
-	padding-left: 1em;
-	height: 100%;
-	width: 50px;
-	float: left;
-	display: block;
-}
-#nav-img img{
-	padding-top: 5px;
-	height: 80%;
-}
-#nav-items {
-	float: right;
-}
-#navigation ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-#navigation li {
-  float: left;
-}
-
-#navigation li a {
-  display: block;
-  color: #33312a;
-  text-align: center;
-  padding: 13px 20px;
-  text-decoration: none;
-}
-
-#navigation li a:hover {
-  color: #998E12;
-}
 .header {
 	width: 100%;
 	overflow: hidden;
@@ -369,14 +310,14 @@ html, body {
 	#jobs h4 {
 		width: 90%;
 	}
-	#work {
+	#work, #projects {
 		overflow: hidden;
 		z-index: 5;
 		position: relative;
 		width: 100%;
 		height: 100%;
 	}
-	#jobs {
+	#jobs, .projects {
 		position: absolute;
 		top:0;
 		right:-17px;
@@ -385,18 +326,15 @@ html, body {
 		z-index: -10;
 		overflow-y:scroll;
 	}
-	#jobs .job img {
+	#jobs .job img, .project-image {
 		display: none;
 	}
-	.job {
+	.job, .project {
 		width: 90%;
 		margin: 0 auto;		
 	}
 	.skills-list {
 		width: 100%;
-	}
-	#nav-items {
-		display: none;
 	}
 	#container {
 		float: right;
@@ -404,20 +342,18 @@ html, body {
 		font-size: 2em;
 		color: #ccc;
 	}
+	#about-text {
+		padding-top: 1em;
+	}
 
 }
 @media only screen and (max-width: 600px) {
-	#nav-items {
-		display: none;
-	}
+
 	#about #tree {
 		display: none;
 	}
 	#about #about-panel {
 		width: 100%;
-	}
-	#about-text {
-		padding-top: 1em;
 	}
 }
 
